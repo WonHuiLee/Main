@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'JSArirang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirang-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+}
 /* 큰제목 전용 폰트 */
 @font-face {
     font-family: 'SLEIGothicTTF';
@@ -14,7 +21,15 @@
 }
 
 /* navbar */
-#indexpage{ƒ
+#maintitle {
+    font-size: xx-large;
+    font-family: 'JSArirang-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirang-RegularA1.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            color: black;
+}
+#indexpage{
     font-family: "";
     font-size:18px;
 }
@@ -118,7 +133,8 @@ a{
 
 thead{
     font-family: "IBMPlexSansKR-Regular";
-    font-size:21px;
+    font-size:18px;
+    color: #fff;
 }
 tbody{
     font-family: "IBMPlexSansKR-Regular";

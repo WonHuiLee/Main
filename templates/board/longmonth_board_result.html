@@ -11,6 +11,22 @@
         <p>{{ question2.content }}</p>
         </pre>
     </div>
+
+    <!-- 게시판 글수정 -->
+    <div>
+    {% if request.user == question2.author %}
+        <a href="{% url 'board:long_modify' question2.id %}"
+           class="btn btn-sm btn-outline-secondary">수정하기</a> <!-- 구현만 해놨습니다 스타일 잡아주세요 -->
+    {% endif %}
+    </div>
+
+    <!-- 게시판 글삭제 -->
+    <div>
+    {% if request.user == question2.author %}
+        <a href="{% url 'board:long_delete' question2.id %}"
+           class="btn btn-sm btn-outline-secondary">삭제하기</a> <!-- 구현만 해놨습니다. 스타일 잡아주세요 -->
+    {% endif %}
+    </div>
     <div id = "commentbox">
         <span id = "userid">작성자 : {{ answer.author.username }}</span>
         <span id = "writedate">작성일자 : {{ answer.create_date }}</span>
